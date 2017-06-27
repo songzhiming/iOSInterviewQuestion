@@ -1,0 +1,5 @@
+target "iOSInterviewQuestion" do
+    pod 'YYWebImage', '1.0.4'
+end
+
+
