@@ -6,9 +6,16 @@
 //  Copyright © 2017年 宋志明. All rights reserved.
 //
 
+typedef struct HHHStruct
+{
+    int a;
+    int b;
+}MyStruct;
+
 #import "AppDelegate.h"
 #import "InterviewQuestionViewController.h"
 #import "MyObject.h"
+#import "NSTimer+Block.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +25,59 @@
 
 #define TLog(prefix,Obj) {NSLog(@"变量内存地址：%p, 变量值：%p, 指向对象值：%@, --> %@",&Obj,Obj,Obj,prefix);}
 
+void UncaughtExceptionHandler(NSException *exception){
+    // 可以通过exception对象获取一些崩溃信息，我们就是通过这些崩溃信息来进行解析的，例如下面的symbols数组就是我们的崩溃堆栈。
+    NSArray *symbols = [exception callStackSymbols];
+    NSString *reason = [exception reason];
+    NSString *name = [exception name];
+    NSLog(@"symbols---%@",symbols);
+    NSLog(@"reason----%@",reason);
+    NSLog(@"name------%@",name);
+}
+
+- (void)NSInvocationWithString:(NSString *)string withNum:(NSNumber *)number withArray:(NSArray *)array withValue:(NSValue *)value{
+    [NSTimer scheduledTimerWithTimeInterval:0.1 block:^(NSTimer *timer) {
+        
+    } repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        
+    }];
+//    UIScrollView 
+    
+    MyStruct struceBack;
+    [value getValue:&struceBack];
+    
+    NSLog(@"%@, %@, %@, %d", string, number, array[0],struceBack.a);
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [NSTimer scheduledTimerWithTimeInterval:0.1 block:^(NSTimer *timer) {
+        
+    } repeats:YES];
+    
+    
+    NSArray *a = @[@(1),@(2),@(3),@(4),@(5)];
+    int ptr = (int)(&a + 1);
+    NSLog(@"---%d",(ptr + 1));
+    
+    NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
+    
+    MyStruct mystruct = {10,20};
+    NSValue *value = [NSValue valueWithBytes:&mystruct objCType:@encode(MyStruct)];
+    NSArray *array = @[@(1),@(2),value];
+    [self performSelector:@selector(testStruct:) withObject:array];
+    
+//    [self performSelector:@selector(test) withObject:nil];
+    
+    
+    NSArray *nameArray = @[@"Jim", @"Tom", @"David"];
+    NSArray *copyArray = [nameArray copy];
+    NSMutableArray *mutableCopyArray = [nameArray mutableCopy];
+    [mutableCopyArray addObject:@"Sam"];
+
+    
     MyObject *obj = [[MyObject alloc]init];
     obj.text = @"my-object";
     TLog(@"obj-", obj);
@@ -35,16 +93,27 @@
     testBlock();
     
     
-    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     InterviewQuestionViewController *vc = [[InterviewQuestionViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
-    NSArray *a = [self tasksRunning:@[@(0),@(5),@(2)] endTasks:@[@(4),@(7),@(8)] times:@[@(1),@(9),@(4),@(3)]];
-    NSLog(@"A===%@",a);
+//    NSArray *a = [self tasksRunning:@[@(0),@(5),@(2)] endTasks:@[@(4),@(7),@(8)] times:@[@(1),@(9),@(4),@(3)]];
+//    NSLog(@"A===%@",a);
     return YES;
 }
+- (void)testStruct:(NSArray *)array
+{
+    MyStruct struceBack;
+    [array[2] getValue:&struceBack];
+
+    NSLog(@"array---%d",struceBack.a);
+//    NSRunLoopCommonModes
+//NSDefaultRunLoopMode
+//    UITrackingRunLoopMode
+    NSLog(@"");
+}
+
 
 
 - (NSArray<NSNumber *> *)tasksRunning:(NSArray<NSNumber *> *)startasks

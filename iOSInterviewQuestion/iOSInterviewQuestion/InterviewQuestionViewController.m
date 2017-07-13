@@ -66,7 +66,9 @@
 {
     if (!_datasource) {
         _datasource = @[@{@"name":@"algorithm",@"vc":@""},
-                        @{@"name":@"Runtime",@"vc":@"RuntimeViewController"}];
+                        @{@"name":@"Runtime",@"vc":@"RuntimeViewController"},
+                        @{@"name":@"Timer",@"vc":@"TimerViewController"},
+                        @{@"name":@"kvc",@"vc":@"KVOViewController"}];
     }
     return _datasource;
 }

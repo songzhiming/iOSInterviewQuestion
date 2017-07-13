@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MyObject : NSObject
-
+@interface MyObject : NSObject<NSCopying,NSMutableCopying>
 @property (nonatomic,copy) NSString *text;
 
 @end
