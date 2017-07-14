@@ -81,7 +81,6 @@ void UncaughtExceptionHandler(NSException *exception){
     MyObject *obj = [[MyObject alloc]init];
     obj.text = @"my-object";
     TLog(@"obj-", obj);
-    
     __weak MyObject *weakObj = obj;
     TLog(@"weakObj", weakObj);
     

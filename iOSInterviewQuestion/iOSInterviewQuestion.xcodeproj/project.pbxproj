@@ -21,6 +21,7 @@
 		01188A521EFA198A0072742E /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 01188A511EFA198A0072742E /* UIButton+touch.m */; };
 		01188A551EFA24790072742E /* AAAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 01188A541EFA24790072742E /* AAAClass.m */; };
 		01188A581EFA24990072742E /* BBBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 01188A571EFA24990072742E /* BBBClass.m */; };
+		013002E51F17C9D100CA51D7 /* NSObject+NSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 013002E41F17C9D100CA51D7 /* NSObject+NSInvocation.m */; };
 		019686041F0E11A900886D2F /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 019686031F0E11A900886D2F /* NSTimer+Block.m */; };
 		019686081F0E17E000886D2F /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019686061F0E17E000886D2F /* TimerViewController.m */; };
 		019686091F0E17E000886D2F /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019686071F0E17E000886D2F /* TimerViewController.xib */; };
@@ -33,6 +34,8 @@
 		01B6DDD11F00BB7900C771CC /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B6DDD01F00BB7900C771CC /* MyObject.m */; };
 		01B6DDD81F014BB300C771CC /* DownloadGroupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B6DDD71F014BB300C771CC /* DownloadGroupManager.m */; };
 		01B6DE211F02010200C771CC /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B6DE201F02010200C771CC /* UIViewController+Category.m */; };
+		01F0E05F1F1778C700E43EA7 /* LockViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F0E05D1F1778C700E43EA7 /* LockViewViewController.m */; };
+		01F0E0601F1778C700E43EA7 /* LockViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F0E05E1F1778C700E43EA7 /* LockViewViewController.xib */; };
 		944EC7EBE1C25557048B6D34 /* libPods-iOSInterviewQuestion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A93F230EC9C8137F1A2016 /* libPods-iOSInterviewQuestion.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,8 @@
 		01188A541EFA24790072742E /* AAAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAClass.m; sourceTree = "<group>"; };
 		01188A561EFA24990072742E /* BBBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBClass.h; sourceTree = "<group>"; };
 		01188A571EFA24990072742E /* BBBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBClass.m; sourceTree = "<group>"; };
+		013002E31F17C9D100CA51D7 /* NSObject+NSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSInvocation.h"; sourceTree = "<group>"; };
+		013002E41F17C9D100CA51D7 /* NSObject+NSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSInvocation.m"; sourceTree = "<group>"; };
 		019686021F0E11A900886D2F /* NSTimer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
 		019686031F0E11A900886D2F /* NSTimer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
 		019686051F0E17E000886D2F /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -103,6 +108,9 @@
 		01B6DDD71F014BB300C771CC /* DownloadGroupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadGroupManager.m; sourceTree = "<group>"; };
 		01B6DE1F1F02010200C771CC /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
 		01B6DE201F02010200C771CC /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
+		01F0E05C1F1778C700E43EA7 /* LockViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockViewViewController.h; sourceTree = "<group>"; };
+		01F0E05D1F1778C700E43EA7 /* LockViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockViewViewController.m; sourceTree = "<group>"; };
+		01F0E05E1F1778C700E43EA7 /* LockViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockViewViewController.xib; sourceTree = "<group>"; };
 		237834F6D3D39933555D5D19 /* Pods-iOSInterviewQuestion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSInterviewQuestion.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSInterviewQuestion/Pods-iOSInterviewQuestion.release.xcconfig"; sourceTree = "<group>"; };
 		2D74997048ED320865C8CF62 /* Pods-iOSInterviewQuestion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSInterviewQuestion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSInterviewQuestion/Pods-iOSInterviewQuestion.debug.xcconfig"; sourceTree = "<group>"; };
 		90A93F230EC9C8137F1A2016 /* libPods-iOSInterviewQuestion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSInterviewQuestion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +167,7 @@
 		01188A0D1EF916AB0072742E /* iOSInterviewQuestion */ = {
 			isa = PBXGroup;
 			children = (
+				01F0E05B1F1778A100E43EA7 /* Lock */,
 				0196860D1F0E2C4F00886D2F /* KVO */,
 				019686011F0E119200886D2F /* Category */,
 				01B6DDD21F014B7500C771CC /* GCD */,
@@ -209,9 +218,6 @@
 			children = (
 				01188A501EFA198A0072742E /* UIButton+touch.h */,
 				01188A511EFA198A0072742E /* UIButton+touch.m */,
-				01188A481EF91AE60072742E /* RuntimeViewController.h */,
-				01188A491EF91AE60072742E /* RuntimeViewController.m */,
-				01188A4A1EF91AE60072742E /* RuntimeViewController.xib */,
 				01188A4D1EF91BA10072742E /* NSObject+Category.h */,
 				01188A4E1EF91BA10072742E /* NSObject+Category.m */,
 				01188A531EFA24790072742E /* AAAClass.h */,
@@ -222,6 +228,11 @@
 				01B6DDD01F00BB7900C771CC /* MyObject.m */,
 				01B6DE1F1F02010200C771CC /* UIViewController+Category.h */,
 				01B6DE201F02010200C771CC /* UIViewController+Category.m */,
+				013002E31F17C9D100CA51D7 /* NSObject+NSInvocation.h */,
+				013002E41F17C9D100CA51D7 /* NSObject+NSInvocation.m */,
+				01188A481EF91AE60072742E /* RuntimeViewController.h */,
+				01188A491EF91AE60072742E /* RuntimeViewController.m */,
+				01188A4A1EF91AE60072742E /* RuntimeViewController.xib */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -277,6 +288,16 @@
 				01B6DDD71F014BB300C771CC /* DownloadGroupManager.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		01F0E05B1F1778A100E43EA7 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				01F0E05C1F1778C700E43EA7 /* LockViewViewController.h */,
+				01F0E05D1F1778C700E43EA7 /* LockViewViewController.m */,
+				01F0E05E1F1778C700E43EA7 /* LockViewViewController.xib */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 		2920B6A77077A1B476CA7ACA /* Pods */ = {
@@ -411,6 +432,7 @@
 				019686151F0E2C9800886D2F /* KVOViewController.xib in Resources */,
 				019686091F0E17E000886D2F /* TimerViewController.xib in Resources */,
 				01188A1B1EF916AB0072742E /* Assets.xcassets in Resources */,
+				01F0E0601F1778C700E43EA7 /* LockViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,8 +506,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01188A551EFA24790072742E /* AAAClass.m in Sources */,
+				01F0E05F1F1778C700E43EA7 /* LockViewViewController.m in Sources */,
 				01188A581EFA24990072742E /* BBBClass.m in Sources */,
 				019686181F0F55D700886D2F /* BinaryTreeNode.m in Sources */,
+				013002E51F17C9D100CA51D7 /* NSObject+NSInvocation.m in Sources */,
 				01188A461EF9172C0072742E /* InterviewQuestionViewController.m in Sources */,
 				01B6DDD81F014BB300C771CC /* DownloadGroupManager.m in Sources */,
 				0196860C1F0E1D8300886D2F /* GCDTimer.m in Sources */,
